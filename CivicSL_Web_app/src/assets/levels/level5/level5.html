@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 5: Civic Assessment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Level 5: Civic Assessment</h1>
+            <p>Final comprehensive assessment of your civic knowledge and understanding</p>
+        </header>
+        
+        <main>
+            <section class="assessment-intro">
+                <h2>Welcome to Your Final Civic Assessment</h2>
+                <p>This comprehensive assessment will test your understanding of all civic concepts covered in the previous levels. You'll need to demonstrate your knowledge of government structures, civic rights, community engagement, and practical application of civic principles.</p>
+                
+                <div class="assessment-info">
+                    <h3>Assessment Details:</h3>
+                    <ul>
+                        <li><strong>Duration:</strong> 7 minutes</li>
+                        <li><strong>Questions:</strong> 20 multiple choice questions</li>
+                        <li><strong>Passing Score:</strong> 80% or higher</li>
+                        <li><strong>Topics:</strong> All levels combined</li>
+                    </ul>
+                </div>
+                
+                <div class="reflection-section">
+                    <h3>Personal Reflection (Optional)</h3>
+                    <p>Before taking the assessment, you can share your thoughts on what you've learned about civic engagement and how you plan to apply this knowledge in your community. This is completely optional.</p>
+                    <textarea id="reflection" placeholder="Share your reflection here (optional)..."></textarea>
+                    <div class="reflection-buttons">
+                        <button id="skip-reflection-btn" class="skip-btn">Skip Reflection & Start Assessment</button>
+                        <button id="start-with-reflection-btn" class="start-btn">Start Assessment with Reflection</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="quiz-section" style="display: none;">
+                <div id="quiz-container">
+                    <div class="quiz-header">
+                        <h2>Civic Assessment</h2>
+                        <div class="quiz-progress">
+                            <span id="question-counter">Question 1 of 20</span>
+                            <div class="progress-bar">
+                                <div id="progress-fill"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="question-container">
+                        <!-- Questions will be loaded here -->
+                    </div>
+                    
+                    <div class="quiz-controls">
+                        <button id="prev-btn" disabled>Previous</button>
+                        <button id="next-btn">Next</button>
+                        <button id="submit-btn" style="display: none;">Submit Assessment</button>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="results-section" style="display: none;">
+                <div id="results-container">
+                    <h2>Assessment Results</h2>
+                    <div id="score-display"></div>
+                    <div id="feedback"></div>
+                    <button id="retry-btn">Retry Assessment</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html> 

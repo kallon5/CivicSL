@@ -1,0 +1,95 @@
+body, #root, .app-root {
+  min-height: 100vh;
+  min-width: 100vw;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+  background: #fff;
+  color: #222;
+  box-sizing: border-box;
+}
+
+.app-root, .main-content, .page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Center content for pages that want it */
+.centered-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  padding: 2rem 2.5rem;
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Responsive font size */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 1.25rem 0.75rem;
+    max-width: 95vw;
+  }
+  html {
+    font-size: 15px;
+  }
+}
+
+/* Remove default link styling */
+a {
+  color: #667eea;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #764ba2;
+}
+
+/* Utility for full height */
+.full-height {
+  min-height: 100vh;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.read-the-docs {
+  color: #888;
+}

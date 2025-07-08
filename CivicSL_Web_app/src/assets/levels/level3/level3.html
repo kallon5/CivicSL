@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CivicSL - Level 3</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📘 Level 3: Government and Its Branches (Sierra Leone)</h1>
+    <div id="lesson-list"></div>
+    <div class="quiz-container hidden" id="quiz-section">
+      <button id="takeQuizBtn">📝 Take Quiz for Level 3</button>
+    </div>
+  </div>
+  <!-- Quiz Modal -->
+  <div id="quizModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Quiz for Level 3</h2>
+      <div id="quizContent"></div>
+      <div id="quizNav" class="mt-5 flex justify-between"></div>
+      <button id="reviewQuizBtn" class="hidden mt-5 bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 font-semibold">Review Quiz</button>
+    </div>
+  </div>
+  <!-- Quiz Review Modal -->
+  <div id="reviewModal" class="modal">
+    <div class="modal-content max-w-[600px]">
+      <span class="close" id="closeReview">&times;</span>
+      <h2>Quiz Review</h2>
+      <div id="reviewContent"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html> 
